@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/pets",
+            "lambdaFunction": "petappfunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/pets"
+        }
+    ],
+    "resourceName": "petapi",
+    "apiName": "petapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "petappfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-petapp-dev-133830-authRole",
+        "unAuthRoleName": "amplify-petapp-dev-133830-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "petappfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
