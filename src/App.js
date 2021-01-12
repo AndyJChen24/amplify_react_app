@@ -25,8 +25,8 @@ function App() {
       {
         pets.map((pet, index) => (
           <div key={index}>
-            <h2>{pets.name} - {pets.weigth}lbs</h2>
-            <h5>favorite treat: {pets.favorite_treat}</h5>
+            <h2>{pet.name} - {pet.weight}lbs</h2>
+            <h5>favorite treat: {pet.favorite_treat}</h5>
           </div>
         ))
       }

@@ -51,7 +51,7 @@ app.get('/pets', function(req, res) {
   res.json({
     pets
   })
-})
+});
 
 /****************************
 * Example post method *
