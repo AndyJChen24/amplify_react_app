@@ -1,13 +1,37 @@
-function app(){
-    app.get('/pets', function(req, res) {
-    const pets = [
-      { name: 'Cooper', weight: '50', favorite_treat: "apples" },
-      { name: 'Bella', weight: '48.3', favorite_treat: "banana"},
-      { name: 'Lucy', weight: '30.6', favorite_treat: "peanut butter" }
-    ]
-    res.json({
-      pets
-    })
-  })
+// Import useState and useEffect hooks from React
+import React, { useState, useEffect } from 'react'
+
+// Import the API category from AWS Amplify
+import { API } from 'aws-amplify'
+
+import './App.css';
+
+function App() {
+  const [pets, updatePets] = useState([])
+
+  // Define function to all API
+  async function fetchPetsData() {
+    const data = await API.get('petapi', '/pets')
+    updatePets(data.pets)
+  }
+
+  // Call fetchCoins function when component loads
+  useEffect(() => {
+    fetchPetsData()
+  }, [])
+
+  return (
+    <div className="App">
+      {
+        pets.map((pet, index) => (
+          <div key={index}>
+            <h2>{pets.name} - {pets.weigth}lbs</h2>
+            <h5>favorite treat: {pets.favorite_treat}</h5>
+          </div>
+        ))
+      }
+    </div>
+  );
 }
-export default app;
+
+export default App
