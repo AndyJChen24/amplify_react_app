@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 // Import the API category from AWS Amplify
 import { API } from 'aws-amplify'
-
+import Form from './components/Form/index'
 import './App.css';
 
 function App() {
@@ -30,7 +30,9 @@ function App() {
           </div>
         ))
       }
+      <Form/>
     </div>
+    
   );
 }
 
