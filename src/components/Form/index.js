@@ -8,9 +8,14 @@ function Form() {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <input name='petName' placeholder='petName' ref={register({ required: true })}/>
+            {errors.petName && <span>This field is required</span>}
+
             <input name='weight' placeholder='petWeightLb' ref={register({ required: true })}/>
+            {errors.weight && <span>This field is required</span>}
+            
             <input name='favoriteFood' placeholder='favoriteFood' ref={register({required: true})}/>
-            {errors.petName && errors.weight && errors.favoriteFood && <span>This field is required</span>}
+            {errors.favoriteFood && <span>This field is required</span>}
+
             <input type='submit'/>
         </form>
     )
