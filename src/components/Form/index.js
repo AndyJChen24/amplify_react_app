@@ -7,13 +7,13 @@ function Form() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input name='petName' placeholder='petName' ref={register({ required: true })}/>
+            <input name='petName' placeholder='petName' maxLength='20' ref={register({ required: true})}/>
             {errors.petName && <span>This field is required</span>}
 
-            <input name='weight' placeholder='petWeightLb' ref={register({ required: true })}/>
+            <input name='weight' type="number" placeholder='petWeightLb' max="20000" ref={register({ required: true})}/>
             {errors.weight && <span>This field is required</span>}
             
-            <input name='favoriteFood' placeholder='favoriteFood' ref={register({required: true})}/>
+            <input name='favoriteFood' maxLength='20' placeholder='favoriteFood' ref={register({required: true})}/>
             {errors.favoriteFood && <span>This field is required</span>}
 
             <input type='submit'/>
