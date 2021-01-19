@@ -30,7 +30,7 @@ function App() {
           </div>
         ))
       }
-      <Form/>
+      {/* <Form/> */}
     </div>
     
   );
