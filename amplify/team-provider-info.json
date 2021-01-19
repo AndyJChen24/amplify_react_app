@@ -1,20 +1,20 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-petapp-dev-133830-authRole",
-            "UnauthRoleArn": "arn:aws:iam::099469003813:role/amplify-petapp-dev-133830-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::099469003813:role/amplify-petapp-dev-133830-authRole",
+            "AuthRoleName": "amplify-petapp-dev-145242-authRole",
+            "UnauthRoleArn": "arn:aws:iam::099469003813:role/amplify-petapp-dev-145242-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::099469003813:role/amplify-petapp-dev-145242-authRole",
             "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-petapp-dev-133830-deployment",
-            "UnauthRoleName": "amplify-petapp-dev-133830-unauthRole",
-            "StackName": "amplify-petapp-dev-133830",
-            "StackId": "arn:aws:cloudformation:us-west-2:099469003813:stack/amplify-petapp-dev-133830/862f9fe0-551e-11eb-a748-0afc3b6c9c9d",
-            "AmplifyAppId": "d1kxdqkjl776f3"
+            "DeploymentBucketName": "amplify-petapp-dev-145242-deployment",
+            "UnauthRoleName": "amplify-petapp-dev-145242-unauthRole",
+            "StackName": "amplify-petapp-dev-145242",
+            "StackId": "arn:aws:cloudformation:us-west-2:099469003813:stack/amplify-petapp-dev-145242/0c4dcbd0-5aa9-11eb-9738-023c805fba83",
+            "AmplifyAppId": "d19fh1k2l3ul7a"
         },
         "categories": {
             "hosting": {
                 "amplifyhosting": {
-                    "appId": "d1kxdqkjl776f3",
+                    "appId": "d19fh1k2l3ul7a",
                     "type": "manual"
                 }
             }

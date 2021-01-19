@@ -68,8 +68,8 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-petapp-dev-133830-deployment",
-          "S3Key": "amplify-builds/petappfunction-2f76495a5258736d752f-build.zip"
+          "S3Bucket": "amplify-petapp-dev-145242-deployment",
+          "S3Key": "amplify-builds/petappfunction-6b3035437a33584a584e-build.zip"
         }
       }
     },
@@ -79,12 +79,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "petappLambdaRole81d970c9",
+            "petappLambdaRole6280d1d8",
             {
               "Fn::Join": [
                 "",
                 [
-                  "petappLambdaRole81d970c9",
+                  "petappLambdaRole6280d1d8",
                   "-",
                   {
                     "Ref": "env"

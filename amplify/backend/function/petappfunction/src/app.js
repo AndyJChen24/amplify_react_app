@@ -21,7 +21,7 @@ app.use(awsServerlessExpressMiddleware.eventContext())
 // Enable CORS for all methods
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+  res.header("Access-Control-Allow-Headers", "*")
   next()
 });
 
@@ -30,17 +30,15 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/item', function(req, res) {
+app.get('/pets', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
 
-app.get('/item/*', function(req, res) {
+app.get('/pets/*', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
-
-/* amplify/backend/function/petappfunction/src/app.js */
 
 app.get('/pets', function(req, res) {
   const pets = [
@@ -51,18 +49,17 @@ app.get('/pets', function(req, res) {
   res.json({
     pets
   })
-});
-
+})
 /****************************
 * Example post method *
 ****************************/
 
-app.post('/item', function(req, res) {
+app.post('/pets', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
 
-app.post('/item/*', function(req, res) {
+app.post('/pets/*', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
@@ -71,12 +68,12 @@ app.post('/item/*', function(req, res) {
 * Example put method *
 ****************************/
 
-app.put('/item', function(req, res) {
+app.put('/pets', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
 
-app.put('/item/*', function(req, res) {
+app.put('/pets/*', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
@@ -85,12 +82,12 @@ app.put('/item/*', function(req, res) {
 * Example delete method *
 ****************************/
 
-app.delete('/item', function(req, res) {
+app.delete('/pets', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });
 
-app.delete('/item/*', function(req, res) {
+app.delete('/pets/*', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });

@@ -19,8 +19,8 @@
     "privacy": {
         "auth": 0,
         "unauth": 0,
-        "authRoleName": "amplify-petapp-dev-133830-authRole",
-        "unAuthRoleName": "amplify-petapp-dev-133830-unauthRole"
+        "authRoleName": "amplify-petapp-dev-145242-authRole",
+        "unAuthRoleName": "amplify-petapp-dev-145242-unauthRole"
     },
     "dependsOn": [
         {
